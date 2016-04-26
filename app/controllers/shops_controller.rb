@@ -3,23 +3,26 @@ class ShopsController < ApplicationController
     # @cities = City.all
     @city = City.find(params[:city_id])
     @shops = @city.shops.all
+
+    redirect_to city_shops_path
   end
   def new
     @city = City.find(params[:city_id])
     @shop = @city.shops.new
 
-    redirect_to new_city_shop_path(@city, @shop)
 
   end
   def create
     @city = City.find(params[:city_id])
     @shop = @city.shops.create(shop_params)
 
-    redirect_to city_shops_path(@city, @shops)
+    redirect_to
   end
   def show
     @city = City.find(params[:city_id])
     @shop = @city.shops.find(params[:id])
+
+    redirect_to city_shop_path
   end
   def edit
     @city = City.find(params[:city_id])

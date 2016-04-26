@@ -1,5 +1,9 @@
 <h1> City Show Page <h1>
 <h2><%= @city.cityname %></h2>
 
+
 <h2 align="center"><div class="button"><%= link_to 'Add City', new_city_path %></div><h2>
+
 <h2 align="center"><div class="button"><%= link_to 'Search Cities', cities_path %></div><h2>
+
+<h2 align="center"><div class="button"><%= link_to 'Coffee Form', new_city_shop_path(@city) %></div><h2>

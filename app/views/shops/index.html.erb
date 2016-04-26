@@ -1,1 +1,9 @@
-<h1>Shops Index</h1>
+<h1>Coffee Shops Index</h1>
+<div class="shoplist">
+
+<% @shops.each do |shop| %>
+<%= link_to shop.shopname, shop_path(shop) %>
+
+<% end %>
+
+</div>

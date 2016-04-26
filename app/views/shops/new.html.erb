@@ -8,15 +8,8 @@
 
   <p>
     <%= f.label :properties %><br>
-    <%= radio_button_tag (:)%>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
-    <%= radio_button_tag %>
+    <%= f.select :properties, ['food', 'drinks', 'wifi', 'music'] %>
+
   </p>
 
   <p>
