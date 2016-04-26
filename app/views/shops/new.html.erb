@@ -8,7 +8,17 @@
 
   <p>
     <%= f.label :properties %><br>
-    <%= f.select :properties, ['food', 'drinks', 'wifi', 'music'] %>
+    <li class="coffeeproperties">
+      <%= f.radio_button :properties, 'Wooden Seats' %> Wooden Seats
+      <%= f.radio_button :properties, 'Bagels' %> Bagels
+      <%= f.radio_button :properties, 'Sandwiches' %> Sandwiches
+      <%= f.radio_button :properties, 'Fruit' %> Fruit
+      <%= f.radio_button :properties, 'Alcohol' %> Alcohol
+      <%= f.radio_button :properties, 'Wifi' %> Wifi
+      <%= f.radio_button :properties, 'Music' %> Music
+      <%= f.radio_button :properties, 'Soy Milk' %> Soy Milk
+      <%= f.radio_button :properties, 'Cushion Seats' %> Cushion Seats
+      <%= f.radio_button :properties, 'Outdoor Seating' %> Outdoor Seating  </li>
 
   </p>
 
