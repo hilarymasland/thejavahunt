@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :cities do
     resources :shops
   end
+
   root 'welcome#index'
 end
   # The priority is based upon order of creation: first created -> highest priority.

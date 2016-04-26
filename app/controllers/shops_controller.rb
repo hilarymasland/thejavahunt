@@ -8,8 +8,8 @@ class ShopsController < ApplicationController
     @city = City.find(params[:city_id])
     @shop = @city.shops.new
 
-    redirect_to new_city_shop_path(@city, @shops)
-  
+    redirect_to new_city_shop_path(@city, @shop)
+
   end
   def create
     @city = City.find(params[:city_id])

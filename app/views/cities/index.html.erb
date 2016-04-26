@@ -1,6 +1,19 @@
 <div>
-  <h1>Java Hunt Index Page</h1>
+  <h1>City INDEX Page</h1>
   <h2>How you brewin?</h2>
 </div>
+
+<div class="citylist">
+
+<% @cities.each do |city| %>
+<%= link_to city.cityname, city_path(city) %>
+
+<% end %>
+
+</div>
+
+
+
+
 <h2 align="center"><div class="button"><%= link_to 'Home', root_path %></div><h2>
-<h2 align="center"><div class="button"><%= link_to 'Add Coffee Shop', new_city_path %></div><h2>
+<h2 align="center"><div class="button"><%= link_to 'Add City', new_city_path %></div><h2>

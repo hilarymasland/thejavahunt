@@ -1,15 +1,15 @@
 <h1>New City Page</h1>
 
 
-<%= form_for :city do |f| %>
+<%= form_for @city do |f| %>
   <p>
     <%= f.label :cityname %><br>
     <%= f.text_field :cityname %>
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "Submit" %>
   </p>
 <% end %>
 
-<h2 align="center"><div class="button"><%= link_to 'Search Your City', new_city_shop_path %></div><h2>
+<h2><%= @city.cityname %></h2>
