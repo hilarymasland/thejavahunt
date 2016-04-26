@@ -1,11 +1,8 @@
 class ShopsController <
   def index
-    @city = City.find(params[:city_id])
-    @shops = @city.shops.all
-  end
-  def show
-    @city = City.find(params[:city_id])
-    @shop = @city.shops.find(params[:id])
+    @cities = City.all
+    # @city = City.find(params[:city_id])
+    # @shops = @city.shops.all
   end
   def new
     @city = City.find(params[:city_id])
@@ -16,6 +13,10 @@ class ShopsController <
     @shop = @city.shops.create(shop_params)
 
     redirect_to city_shops_path(@city, @shops)
+  end
+  def show
+    @city = City.find(params[:city_id])
+    @shop = @city.shops.find(params[:id])
   end
   def edit
     @city = City.find(params[:city_id])
@@ -34,7 +35,7 @@ class ShopsController <
   @shop.destroy
 
   redirect_to city_shops_path
-end
+  end
   private
   def shop_params
     params.require(:shop).permit(:shopname, :location, :properties)

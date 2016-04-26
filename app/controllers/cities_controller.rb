@@ -11,6 +11,7 @@ class CitiesController < ApplicationController
   end
   def show
     @city = City.find(params[:id])
+    @shops = @city.shops
   end
   private
   def city_params
