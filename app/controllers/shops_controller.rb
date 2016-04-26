@@ -9,20 +9,18 @@ class ShopsController < ApplicationController
   def new
     @city = City.find(params[:city_id])
     @shop = @city.shops.new
-
-
   end
   def create
     @city = City.find(params[:city_id])
-    @shop = @city.shops.create(shop_params)
-
-    redirect_to
+    @shop = @city.shops.create!(shop_params.merge(params['shop']))
+    # why is properties unpermitted?
+     redirect_to city_shop_path(@city, @shop)
   end
   def show
     @city = City.find(params[:city_id])
     @shop = @city.shops.find(params[:id])
 
-    redirect_to city_shop_path
+    # redirect_to city_shop_path
   end
   def edit
     @city = City.find(params[:city_id])

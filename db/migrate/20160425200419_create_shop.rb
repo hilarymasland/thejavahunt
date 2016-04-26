@@ -3,7 +3,7 @@ class CreateShop < ActiveRecord::Migration
     create_table :shops do |t|
       t.string :shopname
       t.string :location
-      t.string :properties
+      t.jsonb :properties
     end
   end
 end

@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+city = City.create({ cityname: 'Washington D.C.'})
+
+city.shops.create({ shopname: 'Starbucks', properties: {
+  'Outdoor Seating': true,
+  'Wifi': true,
+  'Soy Milk': true,
+  'Music': true,
+  }})

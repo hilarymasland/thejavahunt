@@ -7,9 +7,8 @@ class CitiesController < ApplicationController
   end
   def create
     @city = City.create!(city_params)
-    if @city.save
+
     redirect_to city_path(@city)
-  end
   end
   def show
     @city = City.find(params[:id])

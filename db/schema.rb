@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20160426151934) do
   create_table "shops", force: :cascade do |t|
     t.string  "shopname"
     t.string  "location"
-    t.string  "properties"
+    t.jsonb   "properties"
     t.integer "city_id"
   end
 

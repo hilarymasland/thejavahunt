@@ -1,6 +1,6 @@
 <h1>New Coffee Shop</h1>
 <div class="form">
-<%= form_for :shop do |f| %>
+<%= form_for [@city, @shop] do |f| %>
   <p>
     <%= f.label :shopname %><br>
     <%= f.text_field :shopname %>
@@ -9,16 +9,12 @@
   <p>
     <%= f.label :properties %><br>
     <li class="coffeeproperties">
-      <%= f.radio_button :properties, 'Wooden Seats' %> Wooden Seats
-      <%= f.radio_button :properties, 'Bagels' %> Bagels
-      <%= f.radio_button :properties, 'Sandwiches' %> Sandwiches
-      <%= f.radio_button :properties, 'Fruit' %> Fruit
-      <%= f.radio_button :properties, 'Alcohol' %> Alcohol
-      <%= f.radio_button :properties, 'Wifi' %> Wifi
-      <%= f.radio_button :properties, 'Music' %> Music
-      <%= f.radio_button :properties, 'Soy Milk' %> Soy Milk
-      <%= f.radio_button :properties, 'Cushion Seats' %> Cushion Seats
-      <%= f.radio_button :properties, 'Outdoor Seating' %> Outdoor Seating  </li>
+
+      <input type="checkbox" value="1" name="shop[properties][wifi]" id="shop_properties"> Wifi
+      <input type="checkbox" value="1" name="shop[properties][outdoor seating]" id="shop_properties"> Outdoor Seating
+      <input type="checkbox" value="1" name="shop[properties][music]" id="shop_properties"> Music
+      <input type="checkbox" value="1" name="shop[properties][soy milk]" id="shop_properties"> Soy Milk
+   </li>
 
   </p>
 
