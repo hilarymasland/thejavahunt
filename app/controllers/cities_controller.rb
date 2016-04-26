@@ -7,6 +7,7 @@ class CitiesController < ApplicationController
   end
   def create
     @city = City.create!(city_params)
+
     redirect_to new_city_shop_path(@city, @shop)
   end
   def show

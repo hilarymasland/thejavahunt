@@ -1,12 +1,15 @@
-class ShopsController <
+class ShopsController < ApplicationController
   def index
-    @cities = City.all
-    # @city = City.find(params[:city_id])
-    # @shops = @city.shops.all
+    # @cities = City.all
+    @city = City.find(params[:city_id])
+    @shops = @city.shops.all
   end
   def new
     @city = City.find(params[:city_id])
     @shop = @city.shops.new
+
+    redirect_to new_city_shop_path(@city, @shops)
+  
   end
   def create
     @city = City.find(params[:city_id])
