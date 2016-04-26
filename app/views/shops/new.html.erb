@@ -1,0 +1,16 @@
+
+<%= form_for :shop do |f| %>
+  <p>
+    <%= f.label :shopname %><br>
+    <%= f.text_field :shopname %>
+  </p>
+
+  <p>
+    <%= f.label :properties %><br>
+    <%= f.text_field :properties %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
