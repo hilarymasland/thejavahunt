@@ -4,7 +4,7 @@ class ShopsController < ApplicationController
     @city = City.find(params[:city_id])
     @shops = @city.shops.all
 
-    redirect_to city_shops_path
+  
   end
   def new
     @city = City.find(params[:city_id])

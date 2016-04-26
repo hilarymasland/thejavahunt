@@ -1,8 +1,10 @@
 <h1>Coffee Shops Index</h1>
+
+
 <div class="shoplist">
 
 <% @shops.each do |shop| %>
-<%= link_to shop.shopname, shop_path(shop) %>
+<%= link_to shop.shopname %>
 
 <% end %>
 
