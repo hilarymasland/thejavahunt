@@ -6,38 +6,47 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-city = City.create({ cityname: 'Washington D.C.'})
-city = City.create({ cityname: 'New York City'})
+washingtondc = City.create({ cityname: 'Washington D.C.'})
+newyorkcity = City.create({ cityname: 'New York City'})
 # city = City.create({ cityname: 'Baltimore'})
 # city = City.create({ cityname: 'San Diego'})
 # city = City.create({ cityname: 'Arlington'})
 
-city.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
+washingtondc.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
   'Outdoor Seating': true,
   'Wifi': true,
   'Soy Milk': true,
   'Music': false,
-  city_id: [],
   }})
 
-city.shops.create({ shopname: 'Port City Java', location: 'Washington D.C.', properties: {
+washingtondc.shops.create({ shopname: 'Port City Java', location: 'Washington D.C.', properties: {
     'Outdoor Seating': true,
     'Wifi': true,
     'Soy Milk': false,
     'Music': true,
-    city_id: [],
     }})
-city.shops.create({ shopname: 'Bean & Bite', location: 'Washington D.C.', properties: {
+washingtondc.shops.create({ shopname: 'Bean & Bite', location: 'Washington D.C.', properties: {
       'Outdoor Seating': true,
       'Wifi': true,
       'Soy Milk': true,
       'Music': false,
-      city_id: [],
       }})
-city.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
+washingtondc.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
         'Outdoor Seating': true,
         'Wifi': true,
         'Soy Milk': true,
         'Music': true,
-        city_id: [],
         }})
+
+        newyorkcity.shops.create({ shopname: 'Starbucks', location: 'New York City', properties: {
+          'Outdoor Seating': true,
+          'Wifi': true,
+          'Soy Milk': true,
+          'Music': true,
+          }})
+          newyorkcity.shops.create({ shopname: 'Dunkin Donuts', location: 'New York City', properties: {
+            'Outdoor Seating': false,
+            'Wifi': true,
+            'Soy Milk': false,
+            'Music': false,
+            }})

@@ -18,7 +18,8 @@ class ShopsController < ApplicationController
   end
   def show
     @city = City.find(params[:city_id])
-    @shop = @city.shops.find(params[:id])
+    @shop = @city.shops.all
+    # find(params[:id])
 
     # redirect_to city_shop_path
   end
