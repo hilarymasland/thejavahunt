@@ -4,7 +4,7 @@ class ShopsController < ApplicationController
     @city = City.find(params[:city_id])
     @shops = @city.shops.all
 
-  
+
   end
   def new
     @city = City.find(params[:city_id])
@@ -42,6 +42,6 @@ class ShopsController < ApplicationController
   end
   private
   def shop_params
-    params.require(:shop).permit(:shopname, :location, :properties)
+    params.require(:shop).permit(:shopname, :location, :properties, :city_id)
   end
 end

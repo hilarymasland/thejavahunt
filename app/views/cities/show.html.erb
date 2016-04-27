@@ -1,10 +1,6 @@
 <h1> City Show Page <h1>
 <h2><%= @city.cityname %></h2>
 
-<p><strong>Coffee Shop:</strong><%= @city.shops.shopname %></p>
-<p><strong>Location:</strong><%= @city.shops.location %></p>
-<p><strong>Properties:</strong><%= @city.shops.properties %></p>
-
 
 
 
@@ -20,4 +16,4 @@
 
 <h2 align="center"><div class="button"><%= link_to 'Search Cities', cities_path %></div><h2>
 
-<h2 align="center"><div class="button"><%= link_to 'Coffee Form', new_city_shop_path(@city) %></div><h2>
+<h2 align="center"><div class="button"><%= link_to 'Add Coffee Shop', new_city_shop_path(@city) %></div><h2>
