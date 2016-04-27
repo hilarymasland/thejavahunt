@@ -4,8 +4,12 @@
   <%= @shop.shopname %>
 </h2>
 
-<p>Location: <%= @shop.location %></p>
-<p>Properties: <%= @shop.properties %></p>
+<% @city.shops.each do |shop| %>
+<p>Shop: <%= @shopname %>
+<p>Location: <%= @location %></p>
+<p>Properties: <%= @properties %></p>
+<% end %>
+
 
 <h2 align="center"><div class="button"><%= link_to 'Java Hunt', cities_path %></div><h2>
 
