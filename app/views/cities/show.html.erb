@@ -5,8 +5,12 @@
 <div>
 
 <% @shops.each do |shop| %>
-  <%= shop.shopname %>
-  <%= shop.properties %> </br>
+  <%= shop.shopname %></br>
+Wifi:  <%= shop.properties["Wifi"] %></br>
+Outdoor Seating:  <%= shop.properties["Outdoor Seating"] %></br>
+Soy Milk:  <%= shop.properties["Soy Milk"] %></br>
+Music:  <%= shop.properties["Music"] %></br>
+</br>
 <% end %>
 
 </div>

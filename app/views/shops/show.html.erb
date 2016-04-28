@@ -12,5 +12,7 @@
 <% @shop.each do |shop| %>
 <p>Shop: <%= shop.shopname %> </p>
 <p>Location: <%= shop.location %></p>
-<p>Properties: <%= shop.properties['Wifi'] %></p>
+<p>Wifi: <%= shop.properties["Wifi"] %></p>
+<p>Outdoor Seating: <%= shop.properties["Outdoor Seating"] %></p>
+
 <% end %>
