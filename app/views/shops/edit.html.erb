@@ -5,24 +5,21 @@
     <%= f.label :shopname %><br>
     <%= f.text_field :shopname %>
   </p>
-  <p>
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </p>
+
   <!-- <p><%= f.hidden_field(:city_id, value: @city.id) %></p> -->
   <p>
     <li class="coffeeproperties">
-      <input type="checkbox" value="1" name="shop[properties][wifi]" id="shop_properties"> Wifi
-      <input type="checkbox" value="1" name="shop[properties][outdoor seating]" id="shop_properties"> Outdoor Seating
-      <input type="checkbox" value="1" name="shop[properties][iced coffee]" id="shop_properties"> Iced Coffee
-      <input type="checkbox" value="1" name="shop[properties][music]" id="shop_properties"> Music
-      <input type="checkbox" value="1" name="shop[properties][soy milk]" id="shop_properties"> Soy Milk </br>
-      <input type="checkbox" value="1" name="shop[properties][sandwiches]" id="shop_properties"> Sandwiches
-      <input type="checkbox" value="1" name="shop[properties][doughnuts]" id="shop_properties"> Doughnuts
-      <input type="checkbox" value="1" name="shop[properties][fruit]" id="shop_properties"> Fruit
-      <input type="checkbox" value="1" name="shop[properties][free refills]" id="shop_properties"> Free Refills
-      <input type="checkbox" value="1" name="shop[properties][flavored coffee]" id="shop_properties"> Flavored Coffee
-      <input type="checkbox" value="1" name="shop[properties][alcohol]" id="shop_properties"> Alcohol
+      <input type="checkbox" value="1" name="shop[properties][Wifi]" id="shop_properties"> Wifi
+      <input type="checkbox" value="1" name="shop[properties][Outdoor Seating]" id="shop_properties"> Outdoor Seating
+      <input type="checkbox" value="1" name="shop[properties][Iced Coffee]" id="shop_properties"> Iced Coffee
+      <input type="checkbox" value="1" name="shop[properties][Music]" id="shop_properties"> Music
+      <input type="checkbox" value="1" name="shop[properties][Soy Milk]" id="shop_properties"> Soy Milk </br>
+      <input type="checkbox" value="1" name="shop[properties][Sandwiches]" id="shop_properties"> Sandwiches
+      <input type="checkbox" value="1" name="shop[properties][Doughnuts]" id="shop_properties"> Doughnuts
+      <input type="checkbox" value="1" name="shop[properties][Fruit]" id="shop_properties"> Fruit
+      <input type="checkbox" value="1" name="shop[properties][Free Refills]" id="shop_properties"> Free Refills
+      <input type="checkbox" value="1" name="shop[properties][Flavored Coffee]" id="shop_properties"> Flavored Coffee
+      <input type="checkbox" value="1" name="shop[properties][Alcohol]" id="shop_properties"> Alcohol
    </li>
   </p>
 
@@ -34,6 +31,8 @@
   <%= f.submit "Delete", :class => "form-button" %>
   <% end %>
 </div>
+
+
 <div class="links">
 <h2 align="center"><div class="button"><%= link_to 'Coffee Shops Index', city_shops_path %></div><h2>
 </div>

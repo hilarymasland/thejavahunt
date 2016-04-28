@@ -6,11 +6,19 @@
     <%= f.text_field :shopname %>
   </p>
 
-  <p>
-   <input type="checkbox" value="1" name="shop[properties][Wifi]" id="shop_properties"> Wifi
-   <input type="checkbox" value="1" name="shop[properties][Outdoor Seating]" id="shop_properties"> Outdoor Seating
-   <input type="checkbox" value="1" name="shop[properties][Music]" id="shop_properties"> Music
-  <p>
+  <li class="coffeeproperties">
+    <input type="checkbox" value="1" name="shop[properties][Wifi]" id="shop_properties"> Wifi
+    <input type="checkbox" value="1" name="shop[properties][Outdoor Seating]" id="shop_properties"> Outdoor Seating
+    <input type="checkbox" value="1" name="shop[properties][Iced Coffee]" id="shop_properties"> Iced Coffee
+    <input type="checkbox" value="1" name="shop[properties][Music]" id="shop_properties"> Music
+    <input type="checkbox" value="1" name="shop[properties][Soy Milk]" id="shop_properties"> Soy Milk </br>
+    <input type="checkbox" value="1" name="shop[properties][Sandwiches]" id="shop_properties"> Sandwiches
+    <input type="checkbox" value="1" name="shop[properties][Doughnuts]" id="shop_properties"> Doughnuts
+    <input type="checkbox" value="1" name="shop[properties][Fruit]" id="shop_properties"> Fruit
+    <input type="checkbox" value="1" name="shop[properties][Free Refills]" id="shop_properties"> Free Refills
+    <input type="checkbox" value="1" name="shop[properties][Flavored Coffee]" id="shop_properties"> Flavored Coffee
+    <input type="checkbox" value="1" name="shop[properties][Alcohol]" id="shop_properties"> Alcohol
+ </li>
     <%= f.submit %>
   </p>
 <% end %>

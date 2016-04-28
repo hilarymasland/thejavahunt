@@ -13,41 +13,65 @@ newyorkcity = City.create({ cityname: 'New York City'})
 # city = City.create({ cityname: 'San Diego'})
 # city = City.create({ cityname: 'Arlington'})
 
-washingtondc.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
-  'Outdoor Seating': true,
-  'Wifi': true,
-  'Soy Milk': true,
-  'Music': true
-  }})
 
 washingtondc.shops.create({ shopname: 'Port City Java', location: 'Washington D.C.', properties: {
     'Outdoor Seating': true,
     'Wifi': true,
     'Soy Milk': true,
-    'Music': true
+    'Music': true,
+    'Sandwiches': true,
+    'Doughnuts': false,
+    'Fruit': false,
+    'Free Refills': true,
+    'Flavored Coffee': true,
+    'Alcohol': false
     }})
 washingtondc.shops.create({ shopname: 'Bean & Bite', location: 'Washington D.C.', properties: {
       'Outdoor Seating': true,
       'Wifi': true,
       'Soy Milk': true,
-      'Music': true
+      'Music': false,
+      'Sandwiches': true,
+      'Doughnuts': false,
+      'Fruit': false,
+      'Free Refills': true,
+      'Flavored Coffee': true,
+      'Alcohol': false
       }})
 washingtondc.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
         'Outdoor Seating': true,
         'Wifi': true,
         'Soy Milk': true,
-        'Music': true
+        'Music': true,
+        'Sandwiches': true,
+        'Doughnuts': false,
+        'Fruit': false,
+        'Free Refills': true,
+        'Flavored Coffee': true,
+        'Alcohol': true
         }})
 
 newyorkcity.shops.create({ shopname: 'Starbucks', location: 'New York City', properties: {
-          'Outdoor Seating': true,
+          'Outdoor Seating': false,
           'Wifi': true,
           'Soy Milk': true,
-          'Music': true
+          'Music': true,
+          'Sandwiches': true,
+          'Doughnuts': false,
+          'Fruit': false,
+          'Free Refills': true,
+          'Flavored Coffee': true,
+          'Alcohol': true
           }})
 newyorkcity.shops.create({ shopname: 'Dunkin Donuts', location: 'New York City', properties: {
             'Outdoor Seating': true,
-            'Wifi': true,
+            'Wifi': false,
             'Soy Milk': true,
-            'Music': true
+            'Music': true,
+            'Sandwiches': true,
+            'Doughnuts': true,
+            'Fruit': false,
+            'Free Refills': true,
+            'Flavored Coffee': true,
+            'Alcohol': false
             }})
