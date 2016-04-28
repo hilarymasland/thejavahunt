@@ -15,6 +15,7 @@ class ShopsController < ApplicationController
     @shop = @city.shops.create!(shop_params.merge(params['shop']))
     # why is properties unpermitted?
      redirect_to city_shop_path(@city, @shop)
+
   end
 
 
@@ -27,7 +28,7 @@ class ShopsController < ApplicationController
 
   # if params[:properties].present?
   #    @shop = @city.shops.all
-  #
+
   #   end
     # redirect_to city_shop_path
   end
@@ -36,6 +37,7 @@ class ShopsController < ApplicationController
     @city = City.find(params[:city_id])
     @shop = @city.shops.find(params[:id])
   end
+
   def update
     @city = City.find(params[:city_id])
     @shop = @city.shops.find(params[:id])
@@ -43,6 +45,13 @@ class ShopsController < ApplicationController
 
     redirect_to city_shops_path
   end
+
+
+
+
+
+
+
   def destroy
   @city = City.find(params[:city_id])
   @shop = Shop.find(params[:id])

@@ -6,10 +6,8 @@
 
 <% @shops.each do |shop| %>
   <%= shop.shopname %></br>
-Wifi:  <%= shop.properties["Wifi"] %></br>
-Outdoor Seating:  <%= shop.properties["Outdoor Seating"] %></br>
-Soy Milk:  <%= shop.properties["Soy Milk"] %></br>
-Music:  <%= shop.properties["Music"] %></br>
+Properties:  <%= shop.properties %></br>
+
 </br>
 <% end %>
 
