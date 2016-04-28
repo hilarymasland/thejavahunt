@@ -7,11 +7,9 @@
   </p>
 
   <p>
-    <%= f.label :properties %>
-    <%= f.check_box :properties %> Wifi
-
-  </p>
-
+   <input type="checkbox" value="1" name="shop[properties][wifi]" id="shop_properties"> Wifi
+   <input type="checkbox" value="1" name="shop[properties][outdoor seating]" id="shop_properties"> Outdoor Seating
+   <input type="checkbox" value="1" name="shop[properties][music]" id="shop_properties"> Music
   <p>
     <%= f.submit %>
   </p>

@@ -11,8 +11,8 @@
 
 <% @shop.each do |shop| %>
 <p>Shop: <%= shop.shopname %> </p>
-<p>Location: <%= shop.location %></p>
-<p>Properties <%= shop.properties %></p>
-
-
+<p>Wifi: <%= shop.properties['Wifi'] %></p>
+<p>Outdoor Seating: <%= shop.properties['Outdoor Seating'] %></p>
+<p>Music: <%= shop.properties['Music'] %></p>
+<p>Soy Milk: <%= shop.properties['Soy Milk'] %></p></br>
 <% end %>
