@@ -16,37 +16,37 @@ washingtondc.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', 
   'Outdoor Seating': true,
   'Wifi': true,
   'Soy Milk': true,
-  'Music': false,
+  'Music': true
   }})
 
 washingtondc.shops.create({ shopname: 'Port City Java', location: 'Washington D.C.', properties: {
     'Outdoor Seating': true,
     'Wifi': true,
-    'Soy Milk': false,
-    'Music': true,
+    'Soy Milk': true,
+    'Music': true
     }})
 washingtondc.shops.create({ shopname: 'Bean & Bite', location: 'Washington D.C.', properties: {
       'Outdoor Seating': true,
       'Wifi': true,
       'Soy Milk': true,
-      'Music': false,
+      'Music': true
       }})
 washingtondc.shops.create({ shopname: 'Starbucks', location: 'Washington D.C.', properties: {
         'Outdoor Seating': true,
         'Wifi': true,
         'Soy Milk': true,
-        'Music': true,
+        'Music': true
         }})
 
-        newyorkcity.shops.create({ shopname: 'Starbucks', location: 'New York City', properties: {
+newyorkcity.shops.create({ shopname: 'Starbucks', location: 'New York City', properties: {
           'Outdoor Seating': true,
           'Wifi': true,
           'Soy Milk': true,
-          'Music': true,
+          'Music': true
           }})
-          newyorkcity.shops.create({ shopname: 'Dunkin Donuts', location: 'New York City', properties: {
-            'Outdoor Seating': false,
+newyorkcity.shops.create({ shopname: 'Dunkin Donuts', location: 'New York City', properties: {
+            'Outdoor Seating': true,
             'Wifi': true,
-            'Soy Milk': false,
-            'Music': false,
+            'Soy Milk': true,
+            'Music': true
             }})

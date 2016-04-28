@@ -1,3 +1,26 @@
+body {
+  color: white;
+  background-color: black;
+}
+.coffeeproperties {
+  list-style: none;
+}
+
+.links {
+  padding-top: 75px;
+  color: yellow;
+  size: 12px;
+}
+
+.div_top{
+  background-image: url("http://www.tibaagan.com/wp-content/uploads/2015/10/1500-banner.jpg");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

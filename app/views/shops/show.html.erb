@@ -1,13 +1,4 @@
 <h1>Coffee Shop Show Page</h1>
-
-
-
-<% @shop.each do |shop| %>
-<p>Shop: <%= shop.shopname %> </p>
-<p>Location: <%= shop.location %></p>
-<p>Properties: <%= shop.properties %></p>
-<% end %>
-
 <div class="links">
 
 <h2 align="center"><div class="button"><%= link_to 'Java Hunt', cities_path %></div><h2>
@@ -15,3 +6,11 @@
 <h2 align="center"><div class="button"><%= link_to 'Home', root_path %></div><h2>
 
 </div>
+
+
+
+<% @shop.each do |shop| %>
+<p>Shop: <%= shop.shopname %> </p>
+<p>Location: <%= shop.location %></p>
+<p>Properties: <%= shop.properties['Wifi'] %></p>
+<% end %>

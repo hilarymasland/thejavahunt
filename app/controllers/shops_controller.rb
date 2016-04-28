@@ -16,10 +16,19 @@ class ShopsController < ApplicationController
     # why is properties unpermitted?
      redirect_to city_shop_path(@city, @shop)
   end
+
+
+
+
   def show
     @city = City.find(params[:city_id])
     @shop = @city.shops.all
 
+
+  # if params[:properties].present?
+  #    @shop = @city.shops.all
+  #
+  #   end
     # redirect_to city_shop_path
   end
 

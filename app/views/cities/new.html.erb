@@ -1,5 +1,7 @@
 <h1>New City Page</h1>
-
+<div class="links">
+<h2 align="center"><div class="button"><%= link_to 'Home', root_path %></div><h2>
+</div>
 
 <%= form_for @city do |f| %>
   <p>
@@ -11,8 +13,3 @@
     <%= f.submit "Submit" %>
   </p>
 <% end %>
-
-
-<div class="links">
-<h2 align="center"><div class="button"><%= link_to 'Home', root_path %></div><h2>
-</div>
