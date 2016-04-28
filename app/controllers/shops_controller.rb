@@ -13,7 +13,7 @@ class ShopsController < ApplicationController
   def create
     @city = City.find(params[:city_id])
     @shop = @city.shops.create!(shop_params.merge(params['shop']))
-    # why is properties unpermitted?
+    #WORKAROUND:  why is properties unpermitted?
      redirect_to city_shop_path(@city, @shop)
 
   end

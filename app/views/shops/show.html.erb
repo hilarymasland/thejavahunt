@@ -10,8 +10,9 @@
 
 
 <% @shop.each do |shop| %>
+<%#= debug shop %>
 <p>Shop: <%= shop.shopname %> </p>
-<p>Wifi: <%= shop.properties['Wifi'] %></p>
+<p data-supports='<% shop.properties['Wifi'] %>'>Wifi: <%= shop.properties['Wifi'] %></p>
 <p>Outdoor Seating: <%= shop.properties['Outdoor Seating'] %></p>
 <p>Music: <%= shop.properties['Music'] %></p>
 <p>Soy Milk: <%= shop.properties['Soy Milk'] %></p></br>

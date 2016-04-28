@@ -5,13 +5,16 @@
 <div>
 
 <% @shops.each do |shop| %>
+<div class="shop">
   <%= shop.shopname %></br>
+  <% shop.properties.each do |property_name, property_value| %>
 
-<p>Wifi: <%= shop.properties['Wifi'] %></p>
-<p>Outdoor Seating: <%= shop.properties['Outdoor Seating'] %></p>
-<p>Music: <%= shop.properties['Music'] %></p>
-<p>Soy Milk: <%= shop.properties['Soy Milk'] %></p>
-</br>
+    <p data-supports='<%= property_value %>'>
+      <%= property_name %>
+    </p>
+  <% end %>
+  </br>
+</div>
 <% end %>
 
 </div>
