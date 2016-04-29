@@ -33,7 +33,9 @@
       </p>
 
       <p>
-        <%= f.submit %> Submit
+
+        <%= f.submit %>
+
       </p>
     <% end %>
     <%= form_for [@city, @shop], method: :delete do |f| %>
@@ -43,7 +45,7 @@
 
 
     <div class="links">
-    <h2 align="center"><div class="button"><%= link_to 'Coffee Shops Index', city_shops_path %></div><h2>
+    <h2 align="center"><div class="button"><%= link_to 'Coffee Shops Index', city_shop_path %></div><h2>
     </div>
 
   </body>
