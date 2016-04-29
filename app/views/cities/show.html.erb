@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="div_top">
-  <h1> City Show Page <h1>
+
 
 
 </div>
@@ -14,7 +14,7 @@
       <h1><%= @city.cityname %></h1>
       <% @shops.each do |shop| %>
       <div class="shop">
-        <%= shop.shopname %></br>
+        <p class="shopname"><%= shop.shopname %></br></p>
         <div class="properties">
         <% shop.properties.each do |property_name, property_value| %>
 

@@ -20,11 +20,55 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 div.shop [data-supports='true'] {
-  color: green;
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+
 }
+
+.JavaHunt {
+  font-family: Impact;
+  font-size: 60px;
+  text-align: center;
+}
+
+.brewin {
+  font-family:cursive;
+  font-size: 48px;
+  text-align: center;
+}
+
+.shopname {
+  font-size: 24px;
+  color: yellow;
+
+}
+.properties {
+  font-family: arial;
+  color: purple;
+}
+.titles {
+  font-family: Impact;
+  font-size: 50px;
+  color: black;
+}
+.citylist {
+  list-style: none;
+  font-size: 40px;
+  color: white;
+}
+ .links {
+   font-size: 20px;
+ }
+ .form {
+   color: yellow;
+   font-family: helvetica;
+   font-size: 16px;
+ }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
